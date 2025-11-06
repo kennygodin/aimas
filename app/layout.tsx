@@ -3,6 +3,7 @@ import { Sora } from "next/font/google";
 import { clashDisplay } from "./fonts";
 import "./globals.css";
 import Navbar from "@/components/ui/shared/navbar";
+import ReactQueryProvider from "./providers/ReactQueryProvider";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -23,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sora.variable} ${clashDisplay.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <ReactQueryProvider>
+          <Navbar />
+          {children}
+        </ReactQueryProvider>
       </body>
     </html>
   );

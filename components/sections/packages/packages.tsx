@@ -52,7 +52,7 @@ const packagesData = [
 
 const Packages = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-[#61C1CF] to-[#F28408] py-20">
+    <div className="min-h-screen bg-linear-to-b from-[#61C1CF] to-[#F28408] pt-0 py-20">
       <div className="w-full mb-20">
         <div className="relative w-full">
           <Image
